@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="115dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonFacile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textBoutonFacile"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="93dp" />
+
+        <Button
+            android:id="@+id/buttonMoyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textBoutonMoyen"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="150dp" />
+
+        <Button
+            android:id="@+id/buttonDifficile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textBoutonDifficile"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="208dp" />
+
+        <Button
+            android:id="@+id/buttonChrono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textBoutonChrono"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="264dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071">
+
+        <TextView
+            android:id="@+id/textTitre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textTitreMainActivity"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="87dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textBoutonSignUp"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="432dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

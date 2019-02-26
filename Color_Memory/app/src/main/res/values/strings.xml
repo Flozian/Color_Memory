@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Color_Memory</string>
+    <string name="textBoutonFacile">Facile</string>
+    <string name="textBoutonMoyen">Moyen</string>
+    <string name="textBoutonDifficile">Difficile</string>
+    <string name="textBoutonChrono">Chrono</string>
+    <string name="textTitreMainActivity">Color Memory</string>
+    <string name="textBoutonSignUp">Sign up</string>
+</resources>
