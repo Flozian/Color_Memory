@@ -4,8 +4,8 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name="redButton">#ff0000</color>
-    <color name="greenButton">#00ff00</color>
-    <color name="blueButton">#0000ff</color>
+    <color name="redButton">#FF0000</color>
+    <color name="greenButton">#00FF00</color>
+    <color name="blueButton">#0000FF</color>
     <color name="purpleButton">#ff00ff</color>
 </resources>

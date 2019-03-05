@@ -7,51 +7,6 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="117dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="115dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/buttonFacile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/textBoutonFacile"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="93dp" />
-
-        <Button
-            android:id="@+id/buttonMoyen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/textBoutonMoyen"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="150dp" />
-
-        <Button
-            android:id="@+id/buttonDifficile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/textBoutonDifficile"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="208dp" />
-
-        <Button
-            android:id="@+id/buttonChrono"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/textBoutonChrono"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="264dp" />
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -73,14 +28,66 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="115dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radioButtonFacile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textRadioFacile" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDifficile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textRadioDifficile" />
+
+            <RadioButton
+                android:id="@+id/radioButtonExpert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textRadioExpert" />
+
+            <RadioButton
+                android:id="@+id/radioButtonChrono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textRadioChrono" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginBottom="87dp"
+        android:layout_marginBottom="84dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/buttonJouer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textBoutonJouer" />
 
         <Button
             android:id="@+id/buttonSignUp"
